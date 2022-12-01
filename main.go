@@ -65,7 +65,7 @@ func init() {
 	})
 	safeAwayTracker = SafeAwayTracker{}
 
-	envPath := ".env"
+	envPath := "env_example"
 	if len(os.Args) == 2 {
 		envPath = os.Args[1]
 	}
