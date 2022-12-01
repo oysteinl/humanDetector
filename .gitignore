@@ -1,0 +1,5 @@
+.env
+.idea
+humanDetector
+*.log
+.DS_Store
