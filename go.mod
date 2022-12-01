@@ -3,7 +3,7 @@ module humanDetector
 go 1.16
 
 require (
-	github.com/Azure/azure-sdk-for-go v54.0.0+incompatible
+	github.com/Azure/azure-sdk-for-go v67.1.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.28
 	github.com/Azure/go-autorest/autorest/validation v0.3.1 // indirect
 	github.com/eclipse/paho.mqtt.golang v1.3.5
