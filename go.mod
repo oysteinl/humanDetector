@@ -6,7 +6,7 @@ require (
 	github.com/Azure/azure-sdk-for-go v67.1.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.28
 	github.com/Azure/go-autorest/autorest/validation v0.3.1 // indirect
-	github.com/eclipse/paho.mqtt.golang v1.3.5
+	github.com/eclipse/paho.mqtt.golang v1.4.2
 	github.com/joho/godotenv v1.4.0
 	github.com/oysteinl/notificationManager v0.0.0-20220403194224-a49d102e6748
 	github.com/sirupsen/logrus v1.9.0
