@@ -114,7 +114,7 @@ func mqttMotionCallback(client mqtt.Client, msg mqtt.Message) {
 		}
 		if isDetected {
 			log.Info("Person detected")
-			data, err := ioutil.ReadAll(buf)
+			data, _ := ioutil.ReadAll(buf)
 			err = notification.NotifyTelegram(notifier.SendPhoto, "Person detected", data, notifier.TelegramConfig{ChatId: telegramChatId, Token: telegramToken})
 			if err != nil {
 				log.Error(err)
@@ -122,7 +122,9 @@ func mqttMotionCallback(client mqtt.Client, msg mqtt.Message) {
 		} else {
 			log.Info("Person not detected")
 			error := ioutil.WriteFile(failFolder+time.Now().Format("20060102T150405")+".jpeg", buf.Bytes(), 0644)
-			log.Error(error)
+			if error != nil {
+				log.Error(error)
+			}
 		}
 	}
 }
